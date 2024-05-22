@@ -14,9 +14,11 @@ app.use("/message", messageAdder);
 app.use(messageReader);
 
 app.use("/", (_req, res) => {
-  res.send("This is a base route that currently has no value other than this message")
-})
+  res.send(
+    "This is a base route that currently has no value other than this message",
+  );
+});
 
 app.listen(PORT, () => {
-  console.log(`Express TS application listening on port ${PORT}`)
-})
+  console.log(`Express TS application listening on port ${PORT}`);
+});
